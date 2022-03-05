@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~\images\1.jpg</ImageUrl>
+    <NavigateUrl>https://www.taobao.com</NavigateUrl>
+    <AlternateText>Yunnan technology and business university</AlternateText>
+    <Keyword>Education</Keyword>
+    <Impressions>30</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~\images\2.jpg</ImageUrl>
+    <NavigateUrl>https://www.taobao.com</NavigateUrl>
+    <AlternateText>Taobao</AlternateText>
+    <Keyword>Electronic commerce</Keyword>
+    <Impressions>30</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~\images\3.jpg</ImageUrl>
+    <NavigateUrl>https://www.taobao.com</NavigateUrl>
+      <AlternateText>Baidu</AlternateText>
+    <Keyword>Search engines</Keyword>
+    <Impressions>30</Impressions>
+  </Ad>
+</Advertisements>

@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterLogin.master.cs" Inherits="ticket_purchase_system.Static.MasterLogin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <section class="login">
+        <%--<img class="left" src="img/log (3).jpg" alt="">--%>
+            <asp:Image class="left" ID="Image1" runat="server" ImageUrl="~/Static/img/log (3).jpg" />
+        <div>
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+        <%--<img class="left right" src="img/log (3).jpg" alt="">--%>
+
+    </section>
+         
+    </form>
+</body>
+</html>

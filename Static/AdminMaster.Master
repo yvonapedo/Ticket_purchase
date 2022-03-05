@@ -1,0 +1,169 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="ticket_purchase_system.Static.AdminMaster" %>
+ 
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav>
+                <div class="top"></div>
+                <div class="nav_top">
+                    <div class="nav_container">
+                        <ul>
+                            <li class="icon"><a href="#"><i class="fas fa-search"></i></a></li>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<li class="icon"><a href="#"><i class="far fa-heart"></i></a></li>
+
+                        </ul>
+                    </div>
+                    <div class="nav_container">
+                        <ul>
+                            <li><a href=" ">HOME</a></li>
+                            <li><a href=" ">FLIGHTS</a></li>
+                            <li><a href=" ">
+                                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Static/img/logo.png" Width="70px" /></a></li>
+
+                            <li><a href=" ">FORUM</a></li>
+                            <li><a href="">MY ACCOUNT</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_container">
+                        <ul>
+                            <li class="icon dark">
+                                <input type="checkbox" class="checkbox" id="checkbox" onclick="myFunction()">
+                                <label for="checkbox" class="label">
+                                    <i class="fas fa-moon"></i>
+                                    <i class="fas fa-sun"></i>
+                                    <div class="ball">
+                                    </div>
+                                </label>
+                            </li>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<li class="icon"><a href="#"><i class="far fa-flag"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        </nav>
+
+
+    <section>
+        <aside>
+            <ul>
+                <li><a href="#"><i class="far fa-user"></i>
+                    <h4 style="text-transform: uppercase;">
+                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    </h4>
+                </a></li>
+                <li><a href="All_flights.aspx"><i class="fas fa-plane"></i>
+                    <h4>ALL FLIGHTS</h4>
+                </a></li>
+                <li><a href="All_tickets.aspx"><i class="fas fa-ticket-alt"></i>
+                    <h4>ALL TICKETS</h4>
+                </a></li>
+                 <li><a href="All_Airports.aspx"><i class="fas fa-plane-departure"></i>
+                    <h4>AIRPORTS</h4>
+                </a></li>
+            </ul>
+            <hr />
+            <ul>
+                 <li><a href="https://covid-19-tracker-a919d.web.app/" target="_blank"><i class="fas fa-lungs-virus"></i>
+                    <h4>COVID</h4>
+                </a></li>
+              
+                
+                <li><a href="Admin_ChangePwd.aspx"><i class="far fa-user"></i>
+                    <h4>CHANGE PWD</h4>
+                </a></li>
+                <li><a href="Admin_login.aspx"><i class="far fa-user"></i>
+                    <h4>LOG OUT</h4>
+                </a></li>
+ 
+            </ul>
+
+        </aside>
+        <main>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+        <div class="advert">
+            <%--<asp:AdRotator ID="AdRotator2" runat="server" AdvertisementFile="~/Static/ad.xml" OnAdCreated="AdRotator2_AdCreated" />--%>
+            <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Static/ad.xml" OnAdCreated="AdRotator2_AdCreated" />
+        </div>
+    </section>
+
+        <footer>
+            <div class="subscribe">
+                <div class="sub-container">
+                    <div class="formSub sub1">
+                      <asp:Image ID="Image1" runat="server" ImageUrl="~/Static/img/air1.png" />
+                        <a href="">news</a></div>
+                    <div class="formSub  ">
+                          <asp:Image ID="Image2" runat="server" ImageUrl="~/Static/img/air2.png" />
+                        <a href="">news</a> </div>
+                    <div class="formSub  ">
+                         <asp:Image ID="Image3" runat="server" ImageUrl="~/Static/img/air3.png" />
+                        <a href="">news</a></div>
+                    <div class="formSub  ">
+                     <asp:Image ID="Image4" runat="server" ImageUrl="~/Static/img/air4.png" />
+                        <a href="">news</a></div>
+                    <div class="formSub sub4">
+                    <asp:Image ID="Image5" runat="server" ImageUrl="~/Static/img/air5.png" />
+                        <a href="">news</a> </div>
+                </div>
+                <div class="subLetter">
+                    <h3>SUBSCRIBE TO NEWSLETTERS</h3>
+                    <input type="text" name="" placeholder="Please enter your mail" id="">
+                    <button type="">SUBSCRIBE</button>
+                </div>
+            </div>
+            <ul>
+                <li><a href="">USERS</a></li>
+                <li></li>
+                <li><a href="">ASP.NET</a></li>
+                <li></li>
+                <li><a href="">FLIGHTS</a></li>
+                <li></li>
+                <li><a href="">AIRPLANE</a></li>
+                <li></li>
+                <li><a href="">BOEING</a></li>
+                <li></li>
+                <li><a href="">AIRBUS</a></li>
+                <li></li>
+                <li><a href="">CHINA</a></li>
+            </ul>
+            <p>Copyright &copy; YVON-APEDO 2020-2022 CST</p>
+        </footer>
+        </div>
+
+    </form>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".shadow-cont"), {
+            max: 20,
+            speed: 200
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".shadow-cont"));
+    </script>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
